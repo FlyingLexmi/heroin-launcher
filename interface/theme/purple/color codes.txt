@@ -1,0 +1,16 @@
+Top color:540798
+
+Bottom color:1C0232
+
+
+Text color: 540798
+
+
+
+    width: 150px;
+    height: 100px;
+    background: linear-gradient(0deg, #1C0232, #540798);
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    height: 720px;
+    width: 640px;

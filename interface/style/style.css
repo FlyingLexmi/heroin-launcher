@@ -1,0 +1,65 @@
+/* Общие стили */
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "Jaro", sans-serif;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.wrapper{
+    background-color: white;
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.background {
+    position: absolute;
+    z-index: 1;
+    width: 800px;
+    height: 720px;
+    background: linear-gradient(0deg, #1C0232, #540798);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+}
+main{
+    z-index: 999;
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+}
+
+header{
+    display: flex;
+    margin-top: 10px;
+    height: 50px;
+}
+
+#nav, #play-button{
+    max-width: 1280px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+#nav{font-size: 20px;margin-left: 20px;}
+#nav a{margin: 0 10px 0 10px;}
+#play-button{margin-top: 660px;display: flex;align-items: center;justify-content: end;}
+#play-button button{ font-family: "Jaro", sans-serif;    margin: 10px 50px 0 0;width: 120px;height: 40px;background-color: white;border: 2px solid white;color: #540798;border-radius: 10px;font-size: 20px;cursor: pointer;}
+header a{text-decoration: none;}
+.launcher-name{
+    font-size: 100px;
+    height: 720px;
+    width: 240px;
+    position: absolute;
+    top: 0;
+}
+.launcher-name h6{margin-top: 540px;margin-left: 20px;color: #540798;}
+.char img{
+    margin-top: -10px;
+}
