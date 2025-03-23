@@ -63,3 +63,5 @@ header a{text-decoration: none;}
 .char img{
     margin-top: -10px;
 }
+
+iframe{display: none;width: 1280px;height: 720px;}

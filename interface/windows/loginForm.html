@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../style/loginWin.css">
 </head>
 <body>
-    <div class="login-form">
+    <div class="login-form"><img src="../assets/img/HEROIN-LAUNCHER-3-23-2025.png">
         <input type="text" placeholder="username">
         <select id="version">
             <option value="1.21.1">1.21.1</option>
@@ -19,6 +19,14 @@
             <option value="1.5.2">1.5.2</option>
         </select>
         <button>PLAY</button>
+        <button id="exit">close</button>
     </div>
+    <script>
+        // The exit button inside the iframe sends a message to the parent to hide the iframe
+        const exitButton = document.getElementById('exit');
+        exitButton.addEventListener('click', function() {
+            parent.document.getElementById('playForm').style.display = 'none'; // Close iframe
+        });
+    </script>
 </body>
 </html>

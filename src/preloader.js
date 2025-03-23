@@ -1,5 +1,7 @@
-const { contextBridge, ipcRenderer } = require('electron');
+const play = document.getElementById("play");
+const playForm = document.getElementById("playForm");
 
-contextBridge.exposeInMainWorld('electronAPI', {
-    myFunction: () => ipcRenderer.send('run')
+play.addEventListener("click", () => {
+    // Показываем iframe
+    playForm.style.display = "block"; // Используем block, чтобы iframe стал видимым
 });
