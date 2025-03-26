@@ -11,18 +11,23 @@
 </head>
 <body>
     <div class="wrapper">
+        <header>
+            <button id="exit">X</button>
+        </header>
         <div class="server-stats">
             <iframe src="https://namemc.com/server/2b2t.org.ru/embed" width="728" height="90"></iframe>
             <iframe  src="https://namemc.com/server/0b0t.org/embed" width="728" height="90"></iframe>
             <iframe src="https://namemc.com/server/9b9t.org/embed" width="728" height="90"></iframe>
         </div>
         <div class="login-form">
-                <input type="text" placeholder="username" id="username">
-                <select name="version" id="version">
-                    <option value="1.12.2">1.12.2</option>
-                    <option value="1.5.2">1.5.2</option>
-                </select><button id="play">PLAY</button>
-                <button id="exit">X</button>
+               <div class="form">
+                    <input type="text" placeholder="username" id="username">
+                    <select name="version" id="version">
+                        <option value="1.12.2">1.12.2</option>
+                        <option value="1.5.2">1.5.2</option>
+                    </select>
+               </div>
+                <button id="play">PLAY</button>
         </div>
     </div>
     <script>

@@ -1,29 +1,48 @@
-*{    font-family: "Jaro", sans-serif;
+*{    
+    font-family: "Jaro", sans-serif;
 }
 
-html,body{
+html, body {
+    overflow: hidden; /* Убираем прокрутку */
     margin: 0;
-    background-color: rgb(55, 1, 99);
+    background: linear-gradient(0deg, #1C0232, #540798);
     padding: 0;
 }
 
-.server-stats{
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.server-stats {
     width: 1280px;
     margin-top: 40px;
     height: 520px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
+    opacity: 0;
+
 }
-.server-stats iframe{
-width:728px;
-height:90px;
-max-width:100%;
-border:none;
-display:block;
-margin:auto;
+
+header{display: flex;align-items: center;
+justify-content: end;margin-right: 50px;max-width: 1280px;height: 30px;margin-top: 50px;}
+.server-stats iframe {
+    width: 728px;
+    height: 90px;
+    max-width: 100%;
+    border: none;
+    margin: auto;
+    display: grid;
 }
-.wrapper{
+
+.wrapper {
     width: 1280px;
     height: 720px;
     backdrop-filter: blur(10px);
@@ -31,37 +50,43 @@ margin:auto;
     flex-direction: column;
     align-items: end;
     justify-content: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
 }
 
-.login-form{
+.login-form {
     width: 1280px;
-    margin-top: 60px;
+    margin-top: 50px;
     height: 100px;
     background-color: rgba(115, 0, 153, 0.751);
     display: flex;
     align-items: center;
     justify-content: space-around;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.7s;
 }
 
+.form{display: flex;}
 
-.username input{
-    margin: 0 50px 0 50px;
+.form input {
+    margin: 0 20px 0 0px;
 }
 
-
-#play{
-    width: 300PX;
-    height: 70px;
+#play {
+    width: 200px;
+    height: 60px;
     background-color: rgb(184, 6, 215);
     color: white;
     border-radius: 10px;
     border: none;
+    margin-left: 450px;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-
-#username{
+#username {
     width: 200px;
     display: flex;
     align-items: center;
@@ -73,12 +98,13 @@ margin:auto;
     border-radius: 10px;
     font-size: 15px;
 }
-#username::placeholder{
+
+#username::placeholder {
     color: white;
     font-size: 10px;
 }
 
-#version{
+#version {
     width: 200px;
     display: flex;
     height: 30px;
@@ -90,7 +116,8 @@ margin:auto;
     border-radius: 10px;
     font-size: 15px;
 }
-#exit{
+
+#exit {
     width: 50px;
     height: 50px;
     display: flex;
