@@ -10,19 +10,22 @@
     <link rel="stylesheet" href="../style/loginWin.css">
 </head>
 <body>
-    <div class="login-form"><img src="../assets/img/HEROIN-LAUNCHER-3-23-2025.png">
-        <input type="text" placeholder="username">
-        <select id="version">
-            <option value="1.21.1">1.21.1</option>
-            <option value="1.20.4">1.20.4</option>
-            <option value="1.12.2">1.12.2</option>
-            <option value="1.5.2">1.5.2</option>
-        </select>
-        <button>PLAY</button>
-        <button id="exit">close</button>
+    <div class="wrapper">
+        <div class="server-stats">
+            <iframe src="https://namemc.com/server/2b2t.org.ru/embed" width="728" height="90"></iframe>
+            <iframe  src="https://namemc.com/server/0b0t.org/embed" width="728" height="90"></iframe>
+            <iframe src="https://namemc.com/server/9b9t.org/embed" width="728" height="90"></iframe>
+        </div>
+        <div class="login-form">
+                <input type="text" placeholder="username" id="username">
+                <select name="version" id="version">
+                    <option value="1.12.2">1.12.2</option>
+                    <option value="1.5.2">1.5.2</option>
+                </select><button id="play">PLAY</button>
+                <button id="exit">X</button>
+        </div>
     </div>
     <script>
-        // The exit button inside the iframe sends a message to the parent to hide the iframe
         const exitButton = document.getElementById('exit');
         exitButton.addEventListener('click', function() {
             parent.document.getElementById('playForm').style.display = 'none'; // Close iframe

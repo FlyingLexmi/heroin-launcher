@@ -1,22 +1,105 @@
-.login-form{
+*{    font-family: "Jaro", sans-serif;
+}
+
+html,body{
+    margin: 0;
+    background-color: rgb(55, 1, 99);
+    padding: 0;
+}
+
+.server-stats{
+    width: 1280px;
+    margin-top: 40px;
+    height: 520px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.server-stats iframe{
+width:728px;
+height:90px;
+max-width:100%;
+border:none;
+display:block;
+margin:auto;
+}
+.wrapper{
     width: 1280px;
     height: 720px;
-    background-color: rgba(96, 3, 146, 0.979);
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    border-radius: 10px;
-    left: 0;
-    z-index: 9999;
+    align-items: end;
     justify-content: center;
 }
 
-input, select, button{margin-top: 20px;background-color: rgb(140, 0, 171);color: white;border:none;}
-input{width: 200px;height: 30px;    font-family: "Jaro", sans-serif;}
-select{width: 200px;height: 30px;    font-family: "Jaro", sans-serif;}
-button{width: 100px;height: 30px;    font-family: "Jaro", sans-serif;cursor: pointer;}
-input::placeholder{color: white;}
-img{width: 300px;}
-#exit{background: none;font-size: 15px; cursor: pointer;}
+.login-form{
+    width: 1280px;
+    margin-top: 60px;
+    height: 100px;
+    background-color: rgba(115, 0, 153, 0.751);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.username input{
+    margin: 0 50px 0 50px;
+}
+
+
+#play{
+    width: 300PX;
+    height: 70px;
+    background-color: rgb(184, 6, 215);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+#username{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: rgb(184, 6, 215);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+#username::placeholder{
+    color: white;
+    font-size: 10px;
+}
+
+#version{
+    width: 200px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 6, 215);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+#exit{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 6, 215);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
